@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import static java.lang.Math.abs;
+public class Main {
+    public static int findGcd(int dividend,int divisor){
+        int rem;
+        while (divisor!=0){
+            rem = dividend%divisor;
+            dividend = divisor;
+            divisor = rem;
+        }return dividend;
+    }
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter two numbers for dividend: ");
+        int num1 = scanner.nextInt();
+        scanner.nextLine();
+        int num2 = scanner.nextInt();
+
+        int gcd = findGcd(num1,num2);
+
+        System.out.println("Gcd of "+num1+" and "+num2+" is "+gcd);
+
+    }
+}
