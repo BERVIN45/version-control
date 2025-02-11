@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int num = 7;
+        int i = 2;
+        boolean prime = true;
+
+        while (num > i) {
+            if (num % i == 0) {
+                System.out.println("Not prime");
+                prime = false;
+                i++;
+                break;
+
+            } if (prime == true) {
+                System.out.println("It's a prime");
+                break;
+            }
+        }
+    }
+}
