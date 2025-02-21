@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+import static java.util.Collections.swap;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int arr[] = {1,2,3,4,6,7,5};
+        int num =5;
+
+        for(int i = 0;i<arr.length;i++){
+            if(arr[i]==num) {
+                System.out.println(i);
+                break;
+            }
+        }
+    }
+}
