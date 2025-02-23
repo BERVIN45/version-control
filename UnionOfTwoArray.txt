@@ -1,0 +1,23 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+import static java.util.Collections.swap;
+public class Main {
+
+    public static void main(String[] args) {
+
+        int arr1[] = {1,2,3,4,5};
+        int arr2[] = {2,3,4,3};
+
+        Set<Integer>union = new HashSet<>();
+        for(int i = 0;i< arr1.length;i++){
+            union.add(arr1[i]);
+        }
+        for(int j = 0;j< arr2.length;j++){
+            union.add(arr2[j]);
+        }
+        System.out.println(union);
+
+        }
+    }
