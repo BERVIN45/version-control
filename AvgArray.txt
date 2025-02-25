@@ -1,0 +1,23 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+import static java.util.Collections.swap;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int[] num = new int[5];
+        int sum = 0;
+
+        System.out.println("Enter 5 numbers;");
+        for(int i = 0;i<5;i++){
+            num[i] = scanner.nextInt();
+            sum = sum+num[i];
+        }
+        int avg = sum/5;
+        System.out.println(avg);
+    }}
