@@ -1,0 +1,24 @@
+import java.lang.reflect.Array;
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+import static java.util.Collections.swap;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a String; ");
+        String s = scanner.nextLine().toLowerCase();
+
+        for(int i =0;i<s.length();i++){
+            if(s.charAt(i)=='a' || s.charAt(i)=='e' || s.charAt(i)=='i' || s.charAt(i)=='o' || s.charAt(i)=='u' ){
+                System.out.println("Vowel found");
+                break;
+            }
+        }
+    }}
