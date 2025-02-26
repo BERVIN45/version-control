@@ -1,0 +1,38 @@
+import java.lang.reflect.Array;
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+import static java.util.Collections.swap;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int num = 5;
+       for(int row = 1;row<=num;row++){
+           for(int col = 1;col<=row;col++){
+               System.out.print("*");
+           }
+           System.out.println(" ");
+       }
+       for(int i = num;i>=1;i--){
+           for(int j = 2;j<=i;j++){
+               System.out.print("*");
+           }
+           System.out.println(" ");
+       }
+    }}
+
+OUTPUT:
+*
+**
+***
+****
+*****
+****
+***
+**
+*
