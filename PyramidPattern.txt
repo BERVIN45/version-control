@@ -1,0 +1,27 @@
+import java.lang.reflect.Array;
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+import static java.util.Collections.swap;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int num = 5;
+
+        for (int row = 1;row<=num;row++){
+            for(int space = 1;space<=num-row;space++){
+                System.out.print(" ");
+            }
+            for (int star = 1;star<=(2*row)-1;star++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }}
+
+
